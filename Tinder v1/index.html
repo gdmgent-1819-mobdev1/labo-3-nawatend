@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel='stylesheet' href='./css/index.css'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Nunito|Roboto" rel="stylesheet">
+
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css' rel='stylesheet' />
+</head>
+
+<body>
+    <!--- SOME extra tests-->
+    <i class="fas fa-bars"></i> --- Choose Desire gender -- Not working
+    <i class="fas fa-fire"></i> --- Show visited profiles
+
+    <div class="clear">CLEAR LOCAL STORAGE</div>
+    <div class="btn__showList">SHOW LOCAL STORAGE</div>
+    <div class="list__localstorage">
+    </div>
+
+
+
+    <!--- END -->
+    <div class="wrapper">
+
+        <div class="container">
+
+            <div class="list__visitedprofiles">
+
+
+            </div>
+            <div class="headerContainer">
+                <div class="headerContainer__burgermenu"><i class="fas fa-bars"></i>
+                    <div class="menu__burger">
+                        <div class="menu__burger--items menu__remove">
+                            <h1>Looking for a:</h1>
+                            <div class="menu__burger--female menu__items"><i class="fas fa-female"></i></div>
+                            <div class="menu__burger--male menu__items"><i class="fas fa-male"></i></div>
+                            <div class="menu__burger--X menu__items"><i class="fas fa-transgender"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="headerContainer__title"><i class="fas fa-fire"></i></div>
+                <div class="headerContainer__messages"><i class="fas fa-comments"></i></div>
+            </div>
+
+            <div class="profileContainer">
+                <div class="profileContainer__images"><img class="profileContainer__images--image" src=""></div>
+                <div class="profileContainer__info">
+                    <div class="profileContainer__info--name">Refresh</div>
+                    <div class="profileContainer__info--age">Refresh</div>
+                    <div class="profileContainer__info--location">Refresh</div>
+                </div>
+
+            </div>
+
+            <div class="chooseContainer">
+                <div class="chooseContainer__dislike"><i class="far fa-thumbs-down"></i></div>
+                <div class="chooseContainer__previouse"> <i class="fas fa-undo-alt"></i></div>
+                <div class="chooseContainer__like"><i class="far fa-heart"></i></div>
+
+            </div>
+        </div>
+        <div class="container__map">
+            <div class="btn__map"><i class="fas fa-map-marked-alt"></i></div>
+            <div id="map" class='map__hide'>
+                <div class="map-circle"></div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js'> </script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
